@@ -1,7 +1,5 @@
-import MyModule from '../../../src/module'
+import IconPark from "../../../src/module";
 
 export default defineNuxtConfig({
-  modules: [
-    MyModule
-  ]
-})
+  modules: [IconPark],
+});
