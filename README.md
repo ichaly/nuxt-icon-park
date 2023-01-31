@@ -2,18 +2,18 @@
 Get your module up and running quickly.
 
 Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
+- Name: Nuxt Icon Park
 - Package name: nuxt-icon-park
-- Description: My new Nuxt module
+- Description: Nuxt icon park module
 -->
 
-# My Module
+# Nuxt Icon Park
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-> My new Nuxt module
+> Nuxt icon park module
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+That's it! You can now use Icon Park in your Nuxt app ✨
 
 ## Development
 
