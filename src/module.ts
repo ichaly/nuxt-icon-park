@@ -1,19 +1,26 @@
-import { defineNuxtModule, addPlugin, createResolver } from "@nuxt/kit";
+import {addComponent, defineNuxtModule} from "@nuxt/kit";
+import * as AllIcons from '@icon-park/vue-next/es/map';
 
 // Module options TypeScript inteface definition
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  prefix: string
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: "icon-park",
+    name: "nuxt-icon-park",
     configKey: "iconPark",
   },
   // Default configuration options of the Nuxt module
-  defaults: {},
+  defaults: {
+    prefix: 'Ip'
+  },
   setup(options, nuxt) {
-    const resolver = createResolver(import.meta.url);
-
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve("./runtime/plugin"));
+    Object.keys(AllIcons).forEach(icon => {
+      addComponent({
+        name: `${options.prefix}${icon}`,
+        filePath: `@icon-park/vue-next/es/icons/${icon}`
+      })
+    })
   },
 });

@@ -1,7 +1,7 @@
 {
   "name": "nuxt-icon-park",
   "version": "1.0.0",
-  "description": "Nuxt IconPark module",
+  "description": "Icon park module for Nuxt",
   "license": "MIT",
   "type": "module",
   "exports": {
