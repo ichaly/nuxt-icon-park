@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-icon-park",
+  "name": "@icon-park/nuxt",
   "version": "1.0.0",
   "description": "Icon park module for Nuxt",
   "license": "MIT",
