@@ -1,9 +1,9 @@
-import {addComponent, defineNuxtModule} from "@nuxt/kit";
-import * as AllIcons from '@icon-park/vue-next/es/map';
+import { addComponent, defineNuxtModule } from "@nuxt/kit";
+import * as AllIcons from "@icon-park/vue-next/es/map";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
-  prefix: string
+  prefix: string;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -13,14 +13,14 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // Default configuration options of the Nuxt module
   defaults: {
-    prefix: 'Ip'
+    prefix: "Ip",
   },
-  setup(options, nuxt) {
-    Object.keys(AllIcons).forEach(icon => {
+  setup(options) {
+    Object.keys(AllIcons).forEach((icon) => {
       addComponent({
         name: `${options.prefix}${icon}`,
-        filePath: `@icon-park/vue-next/es/icons/${icon}`
-      })
-    })
+        filePath: `@icon-park/vue-next/es/icons/${icon}`,
+      });
+    });
   },
 });
