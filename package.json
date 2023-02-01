@@ -42,5 +42,17 @@
     "eslint": "^8.32.0",
     "nuxt": "^3.1.1",
     "vitest": "^0.28.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ichaly/nuxt-icon-park.git"
+  },
+  "keywords": [
+    "nuxt",
+    "iconpark"
+  ],
+  "author": "ichaly"
 }
