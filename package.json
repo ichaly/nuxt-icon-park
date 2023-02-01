@@ -1,6 +1,6 @@
 {
   "name": "nuxt-icon-park",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Icon park module for Nuxt",
   "license": "MIT",
   "type": "module",
@@ -25,13 +25,13 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@icon-park/vue-next": "^1.4.2",
     "@nuxt/kit": "^3.1.1"
   },
   "peerDependencies": {
-    "vue": ">=3.2.45"
+    "@icon-park/vue-next": "^1.4.2"
   },
   "devDependencies": {
+    "@icon-park/vue-next": "^1.4.2",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.2.1",
     "@nuxt/schema": "^3.1.1",
@@ -39,7 +39,8 @@
     "changelogen": "^0.4.1",
     "eslint": "^8.32.0",
     "nuxt": "^3.1.1",
-    "vitest": "^0.28.2"
+    "vitest": "^0.28.2",
+    "vue": "^3.2.45"
   },
   "directories": {
     "test": "test"
