@@ -52,5 +52,9 @@
     "nuxt",
     "iconpark"
   ],
-  "author": "ichaly"
+  "author": "ichaly",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
