@@ -1,5 +1,5 @@
 import { addComponent, defineNuxtModule } from "@nuxt/kit";
-import * as AllIcons from "@icon-park/vue-next/es/map";
+import * as AllIcons from "@icon-park/vue-next";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
@@ -16,7 +16,10 @@ export default defineNuxtModule<ModuleOptions>({
     prefix: "Ip",
   },
   setup(options) {
-    Object.keys(AllIcons).forEach((icon) => {
+    const icons = Object.keys(AllIcons).filter(
+      (value) => value != "DEFAULT_ICON_CONFIGS" && value != "IconProvider"
+    );
+    icons.forEach((icon) => {
       addComponent({
         name: `${options.prefix}${icon}`,
         filePath: `@icon-park/vue-next/es/icons/${icon}`,
