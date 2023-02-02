@@ -1,5 +1,6 @@
-import { addComponent, defineNuxtModule } from "@nuxt/kit";
+import { addComponent, defineNuxtModule, addImportsSources } from "@nuxt/kit";
 import * as AllIcons from "@icon-park/vue-next";
+import { PresetImport } from "unimport";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
@@ -24,6 +25,14 @@ export default defineNuxtModule<ModuleOptions>({
         name: `${options.prefix}${icon}`,
         filePath: `@icon-park/vue-next/es/icons/${icon}`,
       });
+    });
+    addImportsSources({
+      from: `@icon-park/vue-next`,
+      imports: [
+        ...icons.map(
+          (icon) => [icon, `${options.prefix}${icon}`] as PresetImport
+        ),
+      ],
     });
   },
 });
