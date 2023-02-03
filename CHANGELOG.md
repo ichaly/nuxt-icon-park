@@ -14,5 +14,5 @@
 
 ### ❤️  Contributors
 
-- Shi.changliang <shi.changliang@zhaopin.com.cn>
+- Shi.Chaly <i@eunut.com>
 
